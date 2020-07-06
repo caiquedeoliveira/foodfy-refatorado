@@ -1,0 +1,48 @@
+#recipes {
+    font-weight: bold;
+    border-bottom: 2px solid #444444;
+}
+
+/* === RECEITAS === */
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    font-family: Roboto;
+}
+
+.card .card-image img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.card .card-info {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card-info h2 {
+    height: 21px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #111111;
+    margin-bottom: 0px;
+    margin-top: 20px
+}
+
+.card .card-info h3 {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    color: #777777;
+}
+

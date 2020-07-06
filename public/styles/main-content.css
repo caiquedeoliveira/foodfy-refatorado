@@ -1,0 +1,89 @@
+/* === HEADER === */
+
+*{
+    margin: 0
+}
+
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Roboto';
+}
+
+.page-home {
+    max-width: 900px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.page-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.page-links {
+    margin: 0px 122.4px;
+}
+
+.page-links a{
+    margin: 0px 30px;
+    text-decoration: none;
+    color: #111111;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* === FOOTER === */
+.footer-box {
+    width: 100%;
+    align-items: flex-end;
+    
+    
+}
+footer {
+    background-color: #EEEEEE;
+    padding: 1px;
+}
+footer h3 {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+/* === ERROR PAGE === */
+
+.error {
+    width: 800px;
+    height: 72vh;
+    color: #111111;
+    text-align: center;
+    font-family: 'Roboto';
+    margin: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.error img {
+    width: 80px;
+    height: 80px;
+}
+
+.error h2 {
+    margin-top: 10px;
+    font-weight: 400;
+}

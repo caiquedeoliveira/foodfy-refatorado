@@ -1,0 +1,104 @@
+
+/*=== PARTE ROSA ===*/
+.page-info{
+    background: #FBDFDB;
+    border-radius: 30px;
+    font-family: Roboto;
+    width: 940px;
+    height: 366px;
+}
+
+.page-info-content{
+    display:flex;
+}
+
+.page-info-text{
+    display: flex;
+    flex-direction: column;
+    width: 316px;
+    margin: 117px 248px 117px 60px;
+    
+}
+
+.page-info-text h1 {
+    font-size: 32px;
+    color: #111111;
+    line-height: 38px;
+    height: 38px;
+    margin-bottom: 10px;
+    width: 305px;
+}
+
+.page-info-text p {
+    opacity: 0.7;
+    font-size: 18px;
+    color: #000000;
+    line-height: 28px;
+    height: 84px;
+    font-weight: 500;
+    text-align: justify;
+    width: 320px;
+}
+
+.page-info-image img {
+    margin: 66px 100px 0px 0px;
+}
+
+
+
+/* === MAIS ACESSADAS === */
+
+.recipe-title h1 {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+    width: 174px;
+    line-height: 28px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* === RECEITAS === */
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    font-family: Roboto;
+}
+
+.card .card-image img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.card .card-info {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card-info h2 {
+    height: 21px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #111111;
+    margin-bottom: 0px;
+    margin-top: 20px
+}
+
+.card .card-info h3 {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    color: #777777;
+}
+

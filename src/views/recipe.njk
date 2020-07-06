@@ -1,0 +1,67 @@
+{% extends "layout.njk" %}
+
+{% block title %}
+    <title>{{item.title}}</title>
+{% endblock title %}
+
+
+{% block styles %}
+<link rel="stylesheet" href="/styles/recipe-page.css">
+{% endblock styles %}
+
+
+{% block content %}
+    <div class="recipe-header">
+        <div class="recipe-image">
+            <img src="{{item.image}}" alt="Imagem de {{item.title}}">
+        </div>
+        <div class="recipe-name">
+            <h1>{{item.title}}</h1>
+            <h3>por {{item.author}}</h3>
+        </div>
+    </div>
+
+    <div class="recipe-content">
+        <div class="recipe-ingredients">
+            <h2>Ingredientes</h2>
+            <h6>ESCONDER</h6>
+        </div>
+        <div class="ingredients-list">
+            <ul>
+                {% for itens in item.ingredients %}
+                
+                <li>{{itens}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="recipe-preparation">
+            <h2>Modo de preparo</h2>
+            <h6>ESCONDER</h6>
+        </div>
+        <div class="preparation-list">
+            
+            {% for itens in item.preparation %}
+            
+            <p>{{itens}}</p>
+            {% endfor %}
+            
+        </div>
+
+        <div class="recipe-info">
+            <h2>Informações adicionais</h2>
+            <h6>ESCONDER</h6>
+        </div>
+        <div class="info-text">
+            {% for itens in item.information %}
+            
+            <p>{{itens}}</p>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}
+
+
+{% block script %}
+<script src="/scripts/recipe-page.js"></script>
+{% endblock script %}

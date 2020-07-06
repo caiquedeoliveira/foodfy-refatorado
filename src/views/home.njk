@@ -1,0 +1,47 @@
+{% extends "layout.njk" %}
+
+{% block title %}{% endblock title %}
+
+{% block styles %}
+ <link rel="stylesheet" href="/styles/home.css">
+{% endblock styles %}
+    
+
+{% block content %}
+
+        <div class="page-info">
+            <div class="page-info-content">
+                <div class="page-info-text">
+                    <h1>As melhores receitas</h1>
+                    <p>Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.</p>
+                </div>
+                <div class="page-info-image">
+                    <img src="/assets/chef.png" alt="Chef de Cozinha">
+                </div>
+            </div>
+        </div>
+
+        <div class="recipe-title">
+            <h1>Mais acessadas</h1>
+        </div>
+
+        <div class="cards">
+            {% for item in items %}
+            
+            <div class="card" id="{{ item.id }}">
+                <div class="card-image">
+                    <img src="{{ item.image }}" alt="{{ item.title }}">
+                </div>
+                <div class="card-info">
+                    <h2>{{ item.title }}</h2>
+                    <h3>por {{ item.author }}</h3>
+                </div>
+            </div>
+            {% endfor %}
+            
+        </div>
+{% endblock content %}
+
+{% block script %}
+    <script src="/scripts/script.js"></script>
+{% endblock script %}

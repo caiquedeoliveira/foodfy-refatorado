@@ -1,0 +1,52 @@
+@media (max-width: 800px){
+    
+    .page-header{
+        margin-left: 22px;
+    }
+
+    .page-info{
+        width: 630px;
+        margin-left: 8px;
+    }
+
+    .page-info-text{
+        margin-right: 40px;
+        margin-left: 30px;
+    }
+
+    .recipe-title h1 {
+        margin-left: 22px;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card .card-image img{
+        width: 600px;
+        height: 280px;
+    }
+
+    .modal{
+        width: 580px;
+        height: 350px;
+    }
+    
+    .modal-image img{
+        width: 500px;
+        height: 200px;
+    }
+    
+    .modal-info p{
+        margin-top: 10px;
+    }
+}
+
+/* === ABOUT === */
+
+.page-about{
+    margin-left: 20px;
+    margin-right: 20px;
+}
